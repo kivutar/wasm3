@@ -134,7 +134,8 @@ _try {
 
     result = m3Err_functionLookupFailed;
 
-    for (u32 i = 0; i < io_module->numFunctions; ++i)
+	u32 i;
+    for (i = 0; i < io_module->numFunctions; ++i)
     {
         const IM3Function f = & io_module->functions [i];
 
